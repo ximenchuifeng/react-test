@@ -2,7 +2,7 @@ import {SearchPanel} from "./search-panel";
 import {List} from "./list";
 import {useEffect, useState} from "react";
 import qs from "qs";
-import {cleanObject, debounce, useDebounce, useMount} from "../../utils";
+import {cleanObject, useDebounce, useMount} from "../../utils";
 
 
 const apiUrl = process.env.REACT_APP_API_URL;
@@ -36,7 +36,7 @@ export const ProjectListScreen = () => {
     })
 
     return <div>
-        <SearchPanel param={param} setParam={setParam}/>
+        <SearchPanel users={users} param={param} setParam={setParam}/>
         <List users={users} list={list}/>
     </div>
 }

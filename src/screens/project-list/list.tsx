@@ -1,4 +1,4 @@
-export const List = ({list, user}) => {
+export const List = ({list, users}) => {
     return <table>
         <thead>
         <tr>
