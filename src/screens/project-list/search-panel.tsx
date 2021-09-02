@@ -1,6 +1,14 @@
-interface  SearchPanelProps{
+export interface User {
+    id: string;
+    name: string;
+    email: string;
+    title: string;
+    organization: string;
+}
+
+interface SearchPanelProps {
     users: User[],
-    param:{
+    param: {
         name: string;
         personId: string;
     },
